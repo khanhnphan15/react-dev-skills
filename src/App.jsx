@@ -10,10 +10,10 @@ import NewSkillForm from './NewSkillForm';
 export default function App() {
 
   const [skills, setSkills] = useState([
-    { name: "HTML", level: 'LEVEL 5' },
-    { name: "CSS", level: 'LEVEL 3'},
-    { name: "JavaScript", level: 'LEVEL 4' },
-    { name: "Python", level: 'LEVEL 2' },
+    { name: "HTML", level: 5 },
+    { name: "CSS", level: 3 },
+    { name: "JavaScript", level: 4 },
+    { name: "Python", level: 2 },
   ]);
 
   return (

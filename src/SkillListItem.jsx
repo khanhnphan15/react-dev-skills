@@ -7,7 +7,7 @@ export default function SkillListItem({ skill }) {
             {skill.name}
         
             <div className="level">
-                {skill.level}
+                LEVEL {skill.level}
             </div>
         </div>
     );
