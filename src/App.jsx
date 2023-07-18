@@ -16,11 +16,19 @@ export default function App() {
     { name: "Python", level: 2 },
   ]);
 
+  const [showSkills, setShowSkills] = useState(true);
+  //add thhis function
+  function addSkill(skill) {
+    //replace state, don't mutate it
+    setSkills([...skills, skill]);
+  }
+
+
   return (
     <div className="App">
       <h1>React Dev-Skills</h1>
       <SkillList skills={skills} />
-      <NewSkillForm />
+      <NewSkillForm addSkill={addSkill}/>
     </div>
   )
 

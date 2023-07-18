@@ -1,10 +1,8 @@
 import SkillListItem from "./SkillListItem";
 import './SkillList.css';
 export default function SkillList({ skills }) {
-  console.log('slgj');
-  console.log(skills)
-  console.log('ewitu');
-  const skillComponents = skills.map(i => <SkillListItem skill={i} />)
+ 
+  const skillComponents = skills.map(skill => <SkillListItem skill={skill} />)
   // Application logic, etc. goes here
   return (
     <div className="SkillList">
